@@ -1,0 +1,65 @@
+<?php require_once 'admin/api/api.php' ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title><?php echo $info["title"];?></title>
+    <link rel="icon" href="<?php echo IMAGES_PATH.$info["icon"];?>">
+    <!-- Bootstrap -->
+    <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet">
+    <link href="src/css/bootstrap.min.css" rel="stylesheet">
+    <link href="src/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://vk.com/js/api/openapi.js?146" type="text/javascript"></script>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-101494902-1', 'auto');
+        ga('send', 'pageview');
+        ga('require', 'displayfeatures');
+        setTimeout("ga('send', 'event', 'read', '15_seconds')", 15000);
+
+    </script>
+</head>
+<body>
+
+<?php require 'admin/views/header.php';?>
+
+<div class="container-fluid padding">
+  <div class="row">
+
+      <?php require 'admin/views/left_menu.php';?>
+
+      <?php require 'admin/views/center.php';?>
+
+      <?php require 'admin/views/right_menu.php';?>
+   </div>
+  </div>
+
+
+<!--------------------modalMessage------------->
+<?php require 'admin/views/send_message.php';?>
+<?php require 'admin/views/add_item.php';?>
+<?php require 'admin/views/footer.php';?>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script defer src="src/js/bootstrap.min.js"></script>
+<script defer src="src/js/script.js"></script>
+</body>
+</html>
+

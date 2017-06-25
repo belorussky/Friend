@@ -1,0 +1,20 @@
+{
+  "title":"Friend",
+  "email":"vkp2010@yandex.ru",
+  "password":"e10adc3949ba59abbe56e057f20f883e",
+  "icon":"icon.png",
+  "banners":{
+    "left":{
+      "url":"",
+      "img":"picture.png"
+    },
+    "center":{
+      "url":"",
+      "img":"picture.png"
+    },
+    "right":{
+      "url":"",
+      "img":"picture.png"
+    }
+  }
+}
